@@ -1,6 +1,6 @@
 import unittest
 
-from data_structures.dictionary import CustomDictionary
+from dictionary import CustomDictionary
 
 
 class TestCustomDictionary(unittest.TestCase):

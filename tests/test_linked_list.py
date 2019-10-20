@@ -1,7 +1,6 @@
 import unittest
-from typing import List, Any
 
-from data_structures.linked_list import LinkedList
+from linked_list import LinkedList
 
 class TestLinkedList(unittest.TestCase):
 

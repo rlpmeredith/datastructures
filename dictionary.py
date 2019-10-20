@@ -1,4 +1,4 @@
-from data_structures.linked_list import LinkedList
+from linked_list import LinkedList
 
 class CustomDictionary:
 
@@ -62,10 +62,4 @@ class CustomDictionary:
         self._data = [None] * self._dictlen
         for k in templist:
             self.set(k[0], k[1])
-
-
-mydict = CustomDictionary(1000)
-for i in range(1000000):
-    mydict.set(i, 21)
-
 

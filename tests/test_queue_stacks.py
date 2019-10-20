@@ -1,6 +1,6 @@
 import unittest
 
-from data_structures.queue_stacks import QueueStack
+from queue_stacks import QueueStack
 
 class TestQueueStack(unittest.TestCase):
 
