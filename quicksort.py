@@ -1,32 +1,31 @@
 def quicksort(my_list, l_index, r_index):
 
-    pivot = l_index + round((r_index - l_index) /2)
-    print(f"List is {my_list})")
-    print(f"Original pivot position is {pivot}")
-    print(f"Original pivot value is {my_list[pivot]}")
-    print(f"Left index is {l_index}")
-    print(f"Right index is {r_index}")
     if r_index < l_index:
-        print("Exiting")
-        return
+       return
+
+
+def setup():
+
+    pivot = l_index + round((r_index - l_index) /2)
     last_l_index = l_index
     last_r_index = r_index
-
-    def swap_items(l, r):
-
-        my_list.insert(r, my_list[l])
-        del (my_list[l])
-        my_list.insert(l, my_list[r])
-        del (my_list[r + 1])
-
-
     swap_left = False
     swap_right = False
 
+
+def swap_items(l, r):
+
+    my_list.insert(r, my_list[l])
+    del (my_list[l])
+    my_list.insert(l, my_list[r])
+    del (my_list[r + 1])
+
+def sort_sub:
+
     while r_index > pivot or l_index < pivot:
 
-        if my_list[l_index] >= my_list[pivot]:
-            swap_right = True
+    if my_list[l_index] >= my_list[pivot]:
+        swap_right = True
         elif l_index != pivot:
            l_index += 1
 
@@ -59,11 +58,8 @@ def quicksort(my_list, l_index, r_index):
             print(pivot)
             swap_left = False
 
-    print(f"New pivot position is {pivot}")
-    print(my_list)
 
 #    quicksort(my_list, last_l_index, pivot - 1)
 #    quicksort(my_list, pivot + 1, last_r_index)
 
-quicksort([4, 3, 2, 5, 10, 13, 1, 2, 18], 0, 7)
 
